@@ -1,0 +1,70 @@
+.lg .category {
+  padding: 417px 0 48px;
+  @media (max-width: 768px) {
+    padding: 170px 0 24px;
+  }
+
+  &__wrapper {
+    padding: 0 16px;
+    @media (max-width: 768px) {
+      padding: unset;
+    }
+  }
+
+  &__logo {
+    width: unset;
+    margin-bottom: 16px;
+    max-width: 332px;
+    @media (max-width: 768px) {
+      margin-bottom: 0;
+      width: 177px;
+      height: 26px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: #fff;
+    @media (max-width: 768px) {
+      margin-bottom: unset;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.lg .lg__category {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &--objet {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/category-objet.png');
+  }
+  &--tv {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/category-tv.webp');
+  }
+  &--kitchen {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/kitchen.webp');
+  }
+  &--appliances {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/appliances.webp');
+  }
+  &--it {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/it.webp');
+    background-position: 95% 70%;
+  }
+  &--audio {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.04) 60%), 
+    url('https://www.technodom.kz/under/lg-brandzone/audio.webp');
+  }
+}

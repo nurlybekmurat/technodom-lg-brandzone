@@ -1,0 +1,85 @@
+.lg .hero {
+  position: relative;
+  padding: 250px 0 178px;
+  @media (max-width: 768px) {
+    padding: 96px 0 420px;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    max-width: 485px;
+    @media (max-width: 1200px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 768px) {
+      padding-left: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  &__title {
+    color: #fff;
+    margin-bottom: 32px;
+    @media (max-width: 768px) {
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    padding: 18px 64px;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid var(--primary);
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding: 12px 100px;
+    }
+    &:hover {
+      background-color: #fff;
+      border: 1px solid #fff;
+      color: var(--primary);
+    } 
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: var(--bg-color);
+    @media (max-width: 768px) {
+      top: 56px;
+    }
+  }
+}
+
+.swiper {
+  .swiper__slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &--1 {
+      background-image: url('https://www.technodom.kz/under/lg-brandzone/hero-bg-1.png');
+      @media (max-width: 768px) {
+        background-image: url('https://www.technodom.kz/under/lg-brandzone/hero-bg-1-mob.png');
+      }
+    }
+  }
+}

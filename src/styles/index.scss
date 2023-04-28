@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #F4F4F4;
+  --nav-bg: #fff;
+  --nav-text: #464C53;
+  --font-title: #000000;
+  --font-text: #606971;
+  --card-bg:#fff;
+  --card-decor: #EDEDED;
+  --primary:#FC6B3F;
+}
+
+.darkMode {
+  --bg-color: #121212;
+  --nav-bg: #121212;
+  --nav-text: #fff;
+  --font-title: #fff;
+  --font-text: #fff;
+  --card-bg:#252525;
+  --card-decor: #313131;
+  --primary:#FC6B3F;
+}
+
+@font-face {
+  font-family: Museo;
+  font-weight: 400;
+  src: url(https://www.technodom.kz/under/tab_showcase/fonts/MuseoSansCyrl-Regular.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: Museo;
+  font-weight: 700;
+  src: url(https://www.technodom.kz/under/tab_showcase/fonts/MuseoSansCyrl-Bold.woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: Museo;
+  font-weight: 900;
+  src: url(https://www.technodom.kz/under/tab_showcase/fonts/MuseoSansCyrl-ExtraBold.woff2);
+  font-display: swap;
+}
+
+.lg {
+  font-family: Museo;
+  padding-bottom: 200px;
+  position: relative;
+  background-color: var(--bg-color);
+  transition: all 500ms;
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+  }
+
+  .title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    @media (max-width: 768px) {
+      font-size: 22px;
+      line-height: 130%;
+    }
+  }
+
+  .text {
+    margin: 0;
+    font-family: Museo;
+    font-size: 22px;
+    line-height: 130%;
+    @media (max-width: 768px) {
+      font-size: 12.7464px;
+      line-height: 130%;
+    }
+  }
+
+  .btn {
+    display: block;
+    width: fit-content;
+    border: none;
+    padding: 14px 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    &:hover {
+      background-color:var(--primary);
+      color: #fff;
+    }
+  }
+}
+
+.page__main > .container,
+.cms-page {
+  width: 100% !important;
+  max-width: unset;
+}
+
+.cms-page__breadcrumbs {
+  display: none;
+}
+
+.cms-page li:before {
+  content: unset;
+}
+
+.cms-page li {
+  padding-left: unset;
+  margin-bottom: unset;
+}
+
+.cms-page li:last-child {
+  margin-bottom: unset;
+}
+
+@media screen and (max-width: 575px) {
+  .page__main > .container {
+      padding: 0;
+  }
+}
+
+.lg-container {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+.lg-container--video {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .lg-container {
+      padding: 0 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lg-container {
+      padding: 0 16px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "./sections/products.scss";
+@import "./sections/swiper.scss";
+@import "./sections/poular-goods.scss";
+@import "./sections/nav.scss";
+@import "./sections/hero.scss";
+@import "./sections/greeting.scss";
+@import "./sections/category.scss";
+@import "./sections/category-products.scss";
+@import "./sections/toggler.scss";

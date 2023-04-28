@@ -1,0 +1,26 @@
+.lg .greeting {
+  background-color: var(--bg-color);
+  padding: 88px 0;
+  @media (max-width: 768px) {
+    padding: 16px 0 32px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--font-title);
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: var(--font-text);
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+  }
+
+}
